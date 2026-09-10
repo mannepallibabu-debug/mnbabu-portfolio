@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="MNB logo">
+  <defs>
+    <linearGradient id="g" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#69a9ff"/>
+      <stop offset="100%" stop-color="#7ef0d1"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="#08131f"/>
+  <path d="M28 92V36h18l18 26V36h18v56H64L46 66v26H28zm54 0V36h18v56H82z" fill="url(#g)"/>
+</svg>

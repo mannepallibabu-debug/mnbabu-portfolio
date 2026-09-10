@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M. N. Babu | Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --bg: #0b1020;
+        --panel: #111b2d;
+        --card: #17243b;
+        --text: #eaf1ff;
+        --muted: #a8b8d6;
+        --primary: #69a9ff;
+        --secondary: #7ef0d1;
+        --line: rgba(255,255,255,0.08);
+      }
+
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(180deg, #09111d 0%, #0c1728 100%);
+        color: var(--text);
+        line-height: 1.6;
+      }
+      .page {
+        max-width: 1100px;
+        margin: 32px auto;
+        background: rgba(17, 27, 45, 0.96);
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        box-shadow: 0 24px 60px rgba(0,0,0,0.3);
+        overflow: hidden;
+      }
+      .header {
+        background: linear-gradient(135deg, rgba(105,169,255,0.12), rgba(126,240,209,0.08));
+        padding: 32px 40px 20px;
+        border-bottom: 1px solid var(--line);
+      }
+      h1 {
+        margin: 0 0 8px;
+        font-size: clamp(2rem, 3vw, 3rem);
+      }
+      .title {
+        font-size: 1.2rem;
+        color: var(--secondary);
+        margin-bottom: 12px;
+        font-weight: 600;
+      }
+      .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+      .content {
+        padding: 32px 40px 40px;
+      }
+      .section {
+        margin-bottom: 28px;
+      }
+      .section h2 {
+        font-size: 1.1rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--secondary);
+        margin-bottom: 12px;
+      }
+      p, li {
+        color: var(--text);
+      }
+      .summary {
+        color: var(--muted);
+      }
+      .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .chip {
+        padding: 8px 12px;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: rgba(255,255,255,0.02);
+        color: var(--text);
+        font-size: 0.9rem;
+      }
+      .job {
+        margin-bottom: 18px;
+      }
+      .job-header {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin-bottom: 6px;
+      }
+      .job-header strong {
+        font-size: 1.02rem;
+      }
+      .job-header span {
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+      .job h3 {
+        margin: 0 0 4px;
+        font-size: 1rem;
+      }
+      ul {
+        margin: 10px 0 0 18px;
+        padding: 0;
+      }
+      .print-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 18px;
+        padding: 12px 18px;
+        background: linear-gradient(135deg, var(--primary), var(--secondary));
+        color: #07111d;
+        border: none;
+        border-radius: 999px;
+        font-weight: 700;
+        cursor: pointer;
+      }
+      @media print {
+        body { background: white; }
+        .page { margin: 0; border: none; box-shadow: none; border-radius: 0; }
+        .print-btn { display: none; }
+      }
+      @media (max-width: 720px) {
+        .header, .content { padding-left: 20px; padding-right: 20px; }
+        .meta { gap: 8px 16px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <button class="print-btn" onclick="window.print()">Print / Save PDF</button>
+      <div class="header">
+        <h1>MANNEPALLI NAGENDRA BABU</h1>
+        <div class="title">Senior .NET Technical Lead | AWS Certified Solutions Architect</div>
+        <div class="meta">
+          <span>Bengaluru, India</span>
+          <span>mannepalli.babu@outlook.com</span>
+          <span>+91-9620475799</span>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="section">
+          <h2>Professional Summary</h2>
+          <p class="summary">
+            AWS Certified Solutions Architect and Senior Technical Lead with 11+ years of experience engineering high-throughput enterprise systems, modernizing monoliths into microservices, and leading cloud-native application and data platforms. Core expertise spans .NET Core (6+), C#, REST APIs, Microservices, Enterprise Data Lakehouse Architecture (AWS DMS, Apache Iceberg, Glue, Redshift), and Security Engineering (Keycloak, JWT, RBAC). Proven track record of architecting event-driven pipelines, orchestrating multi-account cloud workloads, and driving automated DevOps (Docker, CI/CD, SonarQube). Strong technical mentor skilled in system observability, zero-incident data migrations, and leveraging AI-assisted development for engineering productivity.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>Certifications</h2>
+          <p>• AWS Certified Solutions Architect – Associate | Amazon Web Services (Validation ID: T0J8Y551BN4EQ3WS)</p>
+        </div>
+
+        <div class="section">
+          <h2>Core Technical Skills</h2>
+          <div class="skills">
+            <span class="chip">AWS</span>
+            <span class="chip">.NET Core</span>
+            <span class="chip">C#</span>
+            <span class="chip">Microservices</span>
+            <span class="chip">Apache Iceberg</span>
+            <span class="chip">AWS Glue</span>
+            <span class="chip">Redshift</span>
+            <span class="chip">QuickSight</span>
+            <span class="chip">Keycloak</span>
+            <span class="chip">JWT</span>
+            <span class="chip">RBAC</span>
+            <span class="chip">Docker</span>
+            <span class="chip">CI/CD</span>
+            <span class="chip">SQL Server</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">Kafka</span>
+            <span class="chip">Angular</span>
+            <span class="chip">React</span>
+            <span class="chip">NestJS</span>
+            <span class="chip">GitHub Copilot</span>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Professional Experience</h2>
+
+          <div class="job">
+            <div class="job-header">
+              <strong>TeamLease Services Ltd | Lead Developer / Senior Software Engineer</strong>
+              <span>March 2019 – Present</span>
+            </div>
+            <h3>TL-Lakehouse – Enterprise Data Lakehouse Platform (Sept 2026 – Present)</h3>
+            <ul>
+              <li>Architected secure cross-account ingestion using VPC Peering and AWS DMS Serverless for source platforms including ALCS, HCM, and HireTech.</li>
+              <li>Designed a multi-tier S3 lakehouse using Medallion architecture with Raw, Bronze, Silver, and Gold layers built on Glue, Iceberg, and Redshift.</li>
+              <li>Deployed Apache Airflow and dbt on EC2 to automate data transformations, quality checks, and scheduled batch workflows.</li>
+              <li>Integrated Gold-layer Iceberg tables with Redshift Spectrum and Amazon QuickSight for business intelligence and dashboarding.</li>
+            </ul>
+          </div>
+
+          <div class="job">
+            <div class="job-header">
+              <strong>TeamLease Services Ltd | Lead Developer / Senior Software Engineer</strong>
+              <span>March 2019 – Present</span>
+            </div>
+            <h3>HCM – Human Capital Management</h3>
+            <ul>
+              <li>Designed and led the transition to a microservices architecture using NestJS, Docker, and AWS RDS.</li>
+              <li>Implemented centralized IAM using Keycloak and JWT to standardize RBAC and enterprise security.</li>
+              <li>Established AWS CI/CD pipelines integrated with SonarQube and Jest to reduce regression defects.</li>
+              <li>Engineered scalable storage and delivery workflows using AWS S3, CloudFront CDN, SES, and SNS.</li>
+            </ul>
+          </div>
+
+          <div class="job">
+            <div class="job-header">
+              <strong>TeamLease Services Ltd | Lead Developer / Senior Software Engineer</strong>
+              <span>Jan 2023 – Dec 2024</span>
+            </div>
+            <h3>ATS Lite – Associate Tracking System</h3>
+            <ul>
+              <li>Led full-stack development of enterprise tracking APIs in .NET Core 6 with Angular 18 UI components.</li>
+              <li>Optimized SQL procedures and introduced multi-tier caching to reduce API response times.</li>
+              <li>Enforced coding standards, code reviews, and mentorship across the development team.</li>
+            </ul>
+          </div>
+
+          <div class="job">
+            <div class="job-header">
+              <strong>Axcend Automation & Software Solutions Pvt. Ltd. | Senior Software Developer</strong>
+              <span>Aug 2018 – Feb 2019</span>
+            </div>
+            <h3>AOA Tool (Gas Analyzer Tool)</h3>
+            <ul>
+              <li>Engineered a WPF/SQLite desktop application for ABB India featuring real-time industrial data visualization and offline operation.</li>
+            </ul>
+          </div>
+
+          <div class="job">
+            <div class="job-header">
+              <strong>Harman Connected Services | Senior Engineer</strong>
+              <span>Mar 2016 – Jul 2018</span>
+            </div>
+            <h3>REMA 1000 (Retail Chain)</h3>
+            <ul>
+              <li>Managed enterprise workloads across AWS Lambda, EC2, Oracle 11g, WebLogic 12, and Linux environments.</li>
+              <li>Led monitoring and RCA using Splunk while stabilizing production and UAT systems under critical load.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Education</h2>
+          <p>• Master of Technology (M.Tech) – Vignan Institute of Technology, Guntur (2012)</p>
+        </div>
+
+        <div class="section">
+          <h2>Awards & Recognition</h2>
+          <ul>
+            <li>4× Best Performance Award | TeamLease Services</li>
+            <li>3× Extra Mile Award | Harman Connected Services</li>
+            <li>Best Programmer Award | Karnataka Forest Department</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
